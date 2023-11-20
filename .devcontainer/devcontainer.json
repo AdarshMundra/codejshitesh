@@ -20,7 +20,15 @@
 			"extensions": [
 				"esbenp.prettier-vscode",
 				"vscode-icons-team.vscode-icons",
-				"wayou.vscode-todo-highlight"
+				"wayou.vscode-todo-highlight",
+				"johnpapa.winteriscoming",
+				"formulahendry.auto-rename-tag",
+				"streetsidesoftware.code-spell-checker",
+				"kamikillerto.vscode-colorize",
+				"GitHub.copilot",
+				"GitHub.copilot-chat",
+				"eamodio.gitlens",
+				"oderwat.indent-rainbow"
 			],
 			"settings": {
 				"editor.fontSize": 22,

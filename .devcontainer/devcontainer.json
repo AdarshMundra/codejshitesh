@@ -26,7 +26,8 @@
 				"streetsidesoftware.code-spell-checker",
 				"kamikillerto.vscode-colorize",
 				"eamodio.gitlens",
-				"oderwat.indent-rainbow"
+				"oderwat.indent-rainbow",
+				"ritwickdey.LiveServer"
 			],
 			"settings": {
 				"editor.fontSize": 22,

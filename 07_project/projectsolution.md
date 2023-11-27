@@ -31,13 +31,11 @@ buttons.forEach((button) => {
     }
   });
 });
-
 ```
 
 ## Project 2
 ```
 const form = document.querySelector('form');
-
 form.addEventListener('submit', function (event) {
   event.preventDefault();
   const height = parseInt(document.querySelector('#height').value);
@@ -53,5 +51,19 @@ form.addEventListener('submit', function (event) {
     results.innerHTML = `<span>${bmi}</span>`;
   }
 });
+```
 
+## Project 3
+```
+const clock = document.getElementById('clock');
+console.log(clock);
+
+setInterval(() => {
+  let date = new Date();
+  console.log(date.toLocaleTimeString());
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+```
+## Project 4
+```
 ```

@@ -202,11 +202,14 @@ const randomColor = function () {
 };
 
 const backgroundColor = () => {
+  
   body.style.backgroundColor = randomColor();
 };
 
 document.getElementById('start').addEventListener('click', function () {
+  if (!color){
   color = setInterval(backgroundColor, 5);
+  }
 });
 
 document.getElementById('stop').addEventListener('click', function () {

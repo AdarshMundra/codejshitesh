@@ -160,5 +160,58 @@ function newGame() {
     playGame = true;
   });
 }
+```
+## Project 5
+```javascript
+const insert = document.getElementById('insert');
+console.log(insert);
+
+window.addEventListener('keydown', (e) => {
+  insert.innerHTML = `
+    <div class='color'>
+    <table>
+    <tr>
+      <th>Key</th>
+      <th>Keycode</th> 
+      <th>Code</th>
+    </tr>
+    <tr>
+      <td>${e.key === ' ' ? 'Space' : e.key}</td>
+      <td>${e.keyCode}</td> 
+      <td>${e.code}</td>
+    </tr>
+    
+  </table>
+    </div>
+  `;
+});
+```
+
+## Project 6
+``` javascript
+let color;
+const body = document.querySelector('body');
+
+const randomColor = function () {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
+const backgroundColor = () => {
+  body.style.backgroundColor = randomColor();
+};
+
+document.getElementById('start').addEventListener('click', function () {
+  color = setInterval(backgroundColor, 5);
+});
+
+document.getElementById('stop').addEventListener('click', function () {
+  clearInterval(color);
+  color = null;
+});
 
 ```
